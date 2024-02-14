@@ -89,7 +89,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist
 
 # Gatsby files
 .cache/
@@ -132,4 +132,4 @@ dist
 build
 pnpm-lock.yaml
 package-lock.json
-yarn-lock.json
+yarn.lock

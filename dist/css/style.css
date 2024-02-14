@@ -1,0 +1,89 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  widows: 100%;
+}
+
+.sidebar .sidebar-item {
+  font-size: 13px;
+  border-width: 0 5px 0 5px;
+  border-right-color: transparent;
+  border-radius: 0;
+}
+.sidebar .sidebar-item span {
+  font-size: 20px;
+}
+.sidebar .sidebar-item:hover,
+.sidebar .sidebar-item:active {
+  color: #dc3545;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+.sidebar .sidebar-item:active {
+  background-color: #f8f9fa;
+}
+.sidebar .sidebar-item.active {
+  font-weight: 500;
+  color: #dc3545;
+  border-left-color: #dc3545 !important;
+}
+
+.navbar .nav-item.active .nav-link {
+  font-weight: bold;
+  border-bottom: 4px solid #dc3545;
+}
+.navbar .nav-item .nav-link {
+  padding: 10px 20px !important;
+  border-bottom-width: 3px;
+  border-bottom-color: transparent;
+}
+.navbar .nav-item .nav-link:hover {
+  color: #dc3545;
+}
+.navbar .nav-item .nav-link:active {
+  background-color: #f8f9fa;
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+  color: #dc3545;
+}
+.navbar .dropdown-menu .dropdown-item:active {
+  background-color: #f8f9fa;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#top-menu::-webkit-scrollbar,
+#category-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#top-menu,
+#category-list {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#menu-list .card {
+  cursor: pointer;
+}
+#menu-list .card:hover {
+  border-color: #dc3545 !important;
+}
+#menu-list .card:active {
+  background-color: #f8f9fa;
+}
+
+#category-list .card {
+  cursor: pointer;
+}
+#category-list .card:hover {
+  border-color: #dc3545 !important;
+}
+#category-list .card:active {
+  background-color: #f8f9fa;
+}
+
+#order-list input {
+  width: 60px;
+}

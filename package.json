@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build",
+    "build": "gulp build && cd dist && prettier --write .",
     "pretty": "prettier --plugin=prettier-plugin-ejs -w src/**/*.ejs",
     "pretty:dist": "cd dist && prettier --write ."
   },
