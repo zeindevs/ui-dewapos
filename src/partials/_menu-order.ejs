@@ -1,0 +1,44 @@
+<section id="menu-order" class="d-flex flex-column flex-fill gap-2">
+  <div class="d-flex align-items-center gap-3 p-3 bg-white border-bottom">
+    <div class="col-2">
+      <select class="form-select">
+        <option class="all-menu" selected>All Menu</option>
+        <option class="foods">Foods</option>
+        <option class="drinks">Drink</option>
+      </select>
+    </div>
+    <div class="input-group flex-fill">
+      <input type="search" class="form-control" placeholder="Search menu here ..." />
+      <button class="btn btn-danger">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    <button class="btn btn-danger">
+      <i class="fa fa-qrcode"></i>
+    </button>
+  </div>
+  <div class="flex-fill px-2 overflow-x-auto">
+    <div id="menu-list" class="d-flex flex-wrap overflow-x-auto">
+      <%- include('_menu-item', { title: "Burger"}); -%>
+      <%- include('_menu-item', { title: "Burger"}); -%>
+      <%- include('_menu-item', { title: "Burger"}); -%>
+      <%- include('_menu-item', { title: "Burger"}); -%>
+      <%- include('_menu-item', { title: "Burger"}); -%>
+      <%- include('_menu-item', { title: "Burger"}); -%>
+      <%- include('_menu-item', { title: "Burger"}); -%>
+      <%- include('_menu-item', { title: "Burger"}); -%>
+      <%- include('_menu-item', { title: "Burger"}); -%>
+      <%- include('_menu-item', { title: "Burger"}); -%>
+    </div>
+  </div>
+  <div class="bg-white border-top p-3">
+    <div id="category-list" class="d-flex gap-3 overflow-y-auto">
+      <%- include('_category-item', { title: "Burger", active: true }); -%>
+      <%- include('_category-item', { title: "Burger", active: false }); -%>
+      <%- include('_category-item', { title: "Burger", active: false }); -%>
+      <%- include('_category-item', { title: "Burger", active: false }); -%>
+      <%- include('_category-item', { title: "Burger", active: false }); -%>
+      <%- include('_category-item', { title: "Burger", active: false }); -%>
+    </div>
+  </div>
+</section>

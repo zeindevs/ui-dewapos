@@ -1,0 +1,12 @@
+<% var active = active || false %>
+<% var title = title || "Menu" %>
+<% var icon = icon || '<i class="fa-solid fa-utensils"></i>' %>
+
+<li>
+  <a href="#" class="sidebar-item d-flex flex-column btn btn-white py-2 d-block <% if (active){ %>active<% } %>">
+    <span>
+      <%- icon -%>
+    </span>
+    <%= title %></a
+  >
+</li>

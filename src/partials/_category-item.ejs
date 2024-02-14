@@ -1,0 +1,9 @@
+<% var active = active || false %>
+<% var title = title || "Name" %>
+
+<div class="card col-3 col-md-2 border <% if (active) {%>border-danger text-danger<% } %>">
+  <div class="card-body d-flex flex-column gap-2 align-items-center justify-content-center">
+    <i class="fa-solid fa-burger fs-3"></i>
+    <p class="m-0 card-title"><%= title %></p>
+  </div>
+</div>

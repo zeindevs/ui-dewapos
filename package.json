@@ -1,0 +1,31 @@
+{
+  "name": "ui-dewapos",
+  "version": "0.1.0",
+  "description": "DewaPOS UI generated with Gulp Template Bootstrap 5",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "pretty": "prettier --plugin=prettier-plugin-ejs -w src/**/*.ejs",
+    "pretty:dist": "cd dist && prettier --write ."
+  },
+  "keywords": [
+    "Gulp",
+    "Bootstrap5"
+  ],
+  "author": "zeindevs",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-ejs": "^5.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rimraf": "^1.0.0",
+    "gulp-rollup": "^2.17.0",
+    "gulp-sass": "^5.1.0",
+    "prettier": "^3.2.4",
+    "prettier-plugin-ejs": "^1.0.3",
+    "rollup": "^4.9.6",
+    "sass": "^1.70.0"
+  }
+}

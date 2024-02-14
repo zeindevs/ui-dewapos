@@ -1,0 +1,25 @@
+<% var name = name || "Menu" %>
+<% var price = price || "Rp 12.00" %>
+<% var quantity = quantity || 1 %>
+<% var extra = extra  || "Extra Cheese" %>
+<% var variant = variant  || "No Vegetables" %>
+
+<li class="d-flex flex-column gap-1 border-bottom p-2">
+  <div class="d-flex justify-content-between align-items-center">
+    <h6 class="m-0 fw-bold text-truncate"><%= name %></h6>
+    <h6 class="fw-bold"><%= price %></h6>
+  </div>
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex flex-column">
+      <small class="m-0 text-secondary"><%= extra %></small>
+      <small class="m-0 text-secondary"><%= variant %></small>
+    </div>
+    <div class="col input-group justify-content-end">
+      <button class="btn btn-outline-danger btn-sm">-</button>
+      <div class="">
+        <input type="text"  pattern="[0-9]" inputmode="numeric" class="form-control form-control-sm text-center" value="<%= quantity %>" />
+      </div>
+      <button class="btn btn-danger btn-sm">+</button>
+    </div>
+  </div>
+</li>

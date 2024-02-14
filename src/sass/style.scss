@@ -1,0 +1,127 @@
+$primary: #dc3545;
+$primaryLight: #eea5ad;
+$light: #F8F9FA;
+
+// ========== MAIN ==========
+
+.main {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	widows: 100%;
+}
+
+// ========== SIDEBAR ==========
+
+.sidebar {
+	.sidebar-item {
+		font-size: 13px;
+		border-width: 0 5px 0 5px;
+		border-right-color: transparent;
+		border-radius: 0;
+
+		span {
+			font-size: 20px;
+		}
+
+		&:hover,
+		&:active {
+			color: $primary;
+			border-right-color: transparent;
+			border-left-color: transparent;
+		}
+
+		&:active {
+			background-color: $light;
+		}
+
+		&.active {
+			font-weight: 500;
+			color: $primary;
+			border-left-color: $primary !important;
+		}
+	}
+}
+
+// ========== NAVBAR ==========
+
+.navbar {
+	.nav-item {
+		&.active {
+			.nav-link {
+				font-weight: bold;
+				border-bottom: 4px solid $primary;
+			}
+		}
+		.nav-link {
+			padding: 10px 20px !important;
+			border-bottom-width: 3px;
+			border-bottom-color: transparent;
+
+			&:hover {
+				color: $primary;
+			}
+
+			&:active {
+				background-color: $light;
+			}
+		}
+	}
+	.dropdown-menu {
+		.dropdown-item {
+			&:hover {
+				color: $primary;
+			}
+			&:active {
+				background-color: $light;
+			}
+		}
+	}
+}
+
+// ========== HIDE SCROLLBAR ==========
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#top-menu::-webkit-scrollbar,
+#category-list::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#top-menu,
+#category-list {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+// ========== ORDER MENU ==========
+
+#menu-list {
+	.card {
+		cursor: pointer;
+		&:hover {
+			border-color: $primary !important;
+		}
+		&:active {
+			background-color: $light;
+		}
+	}
+}
+
+#category-list {
+	.card {
+		cursor: pointer;
+		&:hover {
+			border-color: $primary !important;
+		}
+		&:active {
+			background-color: $light;
+		}
+	}
+}
+
+#order-list {
+	input {
+		width: 60px;
+	}
+}

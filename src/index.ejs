@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/_head', {title:'DewaPOS'}); -%>
+  </head>
+  <body class="bg-light">
+    <div class="main overflow-hidden">
+      <%- include('partials/_navbar'); -%>
+      <div class="d-flex flex-fill overflow-hidden">
+        <%- include('partials/_sidebar'); -%>
+        <div class="d-flex flex-column flex-md-row flex-fill overflow-auto">
+          <%- include('partials/_menu-order'); -%>
+          <%- include('partials/_right-order'); -%>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
