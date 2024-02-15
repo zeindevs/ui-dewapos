@@ -1,6 +1,10 @@
-# gulp-template-b5
+# ui-dewapos
 
-> Gulp project template for Bootstrap 5
+<div align="center">
+	<img alt="UI DewaPOS" src="./screenshot.png" />
+</div>
+
+> Generated with [gulp-template-bs5](https://github.com/zeindevs/gulp-template-bs5)
 
 ## Features?
 
