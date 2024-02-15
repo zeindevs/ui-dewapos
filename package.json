@@ -14,7 +14,7 @@
     "Bootstrap5"
   ],
   "author": "zeindevs",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "devDependencies": {
     "browser-sync": "^3.0.2",
     "gulp": "^4.0.2",
